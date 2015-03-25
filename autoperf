@@ -1,9 +1,14 @@
 #!/bin/bash
 
+#Get script directory
+FULL_PATH=$( readlink -f "$0")
+CURRENT_PATH=$( dirname "$FULL_PATH" )
+
 #echo "${*:2}"
 #for i in ${*:2}
 #do
 	#echo argument: $i
 #done
 
+cd "$CURRENT_PATH"
 java -cp antlr/*:bin Main.Main ${*:2}

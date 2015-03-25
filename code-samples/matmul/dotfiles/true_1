@@ -1,0 +1,3 @@
+digraph AllDep {
+	matmul_0;
+}

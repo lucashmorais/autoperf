@@ -1,0 +1,10 @@
+digraph AllDep {
+	matmul_0;
+	matmul_1 -> matmul_0 [color="#ffa193"];
+	matmul_2;
+	matmul_3 -> matmul_2 [color="#ffa193"];
+	matmul_4;
+	matmul_5 -> matmul_4 [color="#ffa193"];
+	matmul_6;
+	matmul_7 -> matmul_6 [color="#ffa193"];
+}

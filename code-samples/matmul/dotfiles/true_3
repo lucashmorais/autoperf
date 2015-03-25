@@ -1,0 +1,29 @@
+digraph AllDep {
+	matmul_0;
+	matmul_1 -> matmul_0 [color="#ffa193"];
+	matmul_2 -> matmul_1 [color="#ffa193"];
+	matmul_3;
+	matmul_4 -> matmul_3 [color="#ffa193"];
+	matmul_5 -> matmul_4 [color="#ffa193"];
+	matmul_6;
+	matmul_7 -> matmul_6 [color="#ffa193"];
+	matmul_8 -> matmul_7 [color="#ffa193"];
+	matmul_9;
+	matmul_10 -> matmul_9 [color="#ffa193"];
+	matmul_11 -> matmul_10 [color="#ffa193"];
+	matmul_12;
+	matmul_13 -> matmul_12 [color="#ffa193"];
+	matmul_14 -> matmul_13 [color="#ffa193"];
+	matmul_15;
+	matmul_16 -> matmul_15 [color="#ffa193"];
+	matmul_17 -> matmul_16 [color="#ffa193"];
+	matmul_18;
+	matmul_19 -> matmul_18 [color="#ffa193"];
+	matmul_20 -> matmul_19 [color="#ffa193"];
+	matmul_21;
+	matmul_22 -> matmul_21 [color="#ffa193"];
+	matmul_23 -> matmul_22 [color="#ffa193"];
+	matmul_24;
+	matmul_25 -> matmul_24 [color="#ffa193"];
+	matmul_26 -> matmul_25 [color="#ffa193"];
+}

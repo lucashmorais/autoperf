@@ -1,0 +1,10 @@
+reset
+unset key
+set terminal png
+set output "histograms/e-6-TRUE.png"
+set boxwidth 0.9 relative
+set style data histograms
+set style histogram cluster
+set style fill solid 1.0
+set xtics border offset 1
+plot for [COL=2:2] '.histoData' using COL:xticlabels(1)

@@ -1,0 +1,108 @@
+# ========
+# captured on: Wed Mar 25 12:15:08 2015
+# hostname : lucas-670Z5E
+# os release : 3.13.0-46-generic
+# perf version : 3.13.11-ckt15
+# arch : x86_64
+# nrcpus online : 4
+# nrcpus avail : 4
+# cpudesc : Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
+# cpuid : GenuineIntel,6,58,9
+# total memory : 8059124 kB
+# cmdline : /usr/lib/linux-tools-3.13.0-46/perf record ./matmul 7 
+# event : name = cycles, type = 0, config = 0x0, config1 = 0x0, config2 = 0x0, excl_usr = 0, excl_kern = 0, excl_host = 0, excl_guest = 1, precise_ip = 0, attr_mmap2 = 0, attr_mmap  = 1, attr_mmap_data = 0
+# HEADER_CPU_TOPOLOGY info available, use -I to display
+# HEADER_NUMA_TOPOLOGY info available, use -I to display
+# pmu mappings: cpu = 4, software = 1, tracepoint = 2, uncore_cbox_0 = 6, uncore_cbox_1 = 7, breakpoint = 5
+# ========
+#
+# Samples: 12K of event 'cycles'
+# Event count (approx.): 9409967887
+#
+# Overhead  Command       Shared Object                               Symbol
+# ........  .......  ..................  ...................................
+#
+    54.03%   matmul  libc-2.19.so        [.] vfprintf                       
+    12.10%   matmul  libc-2.19.so        [.] _IO_file_xsputn@@GLIBC_2.2.5   
+     8.13%   matmul  libc-2.19.so        [.] __parse_one_specmb             
+     4.25%   matmul  libc-2.19.so        [.] _itoa_word                     
+     4.06%   matmul  libc-2.19.so        [.] __strchrnul                    
+     3.87%   matmul  libc-2.19.so        [.] __GI___mempcpy                 
+     2.71%   matmul  matmul              [.] printmrd                       
+     2.25%   matmul  libc-2.19.so        [.] memset                         
+     1.92%   matmul  matmul              [.] printmr                        
+     1.33%   matmul  libc-2.19.so        [.] printf                         
+     0.84%   matmul  libpthread-2.19.so  [.] _pthread_cleanup_push_defer    
+     0.80%   matmul  matmul              [.] printmwd                       
+     0.75%   matmul  matmul              [.] printmw                        
+     0.75%   matmul  matmul              [.] convert_to_blocks              
+     0.49%   matmul  libpthread-2.19.so  [.] _pthread_cleanup_pop_restore   
+     0.24%   matmul  matmul              [.] printf@plt                     
+     0.15%   matmul  libblas.so.3.0      [.] ATL_sJIK48x48x48TN48x48x0_a1_b1
+     0.15%   matmul  libblas.so.3.0      [.] ATL_sJIK0x0x0TN0x0x0_a1_bX     
+     0.09%   matmul  libblas.so.3.0      [.] 0x0000000000275859             
+     0.07%   matmul  [kernel.kallsyms]   [k] __srcu_read_lock               
+     0.06%   matmul  libblas.so.3.0      [.] ATL_scol2blk_a1                
+     0.05%   matmul  matmul              [.] fill_random                    
+     0.05%   matmul  libc-2.19.so        [.] __random                       
+     0.05%   matmul  libblas.so.3.0      [.] ATL_supMBmm0_4_0_b1            
+     0.05%   matmul  libblas.so.3.0      [.] ATL_supKBmm16_4_1_b1           
+     0.05%   matmul  [kernel.kallsyms]   [k] __srcu_read_unlock             
+     0.04%   matmul  libc-2.19.so        [.] __GI___libc_write              
+     0.03%   matmul  [kernel.kallsyms]   [k] vfs_write                      
+     0.03%   matmul  libc-2.19.so        [.] _IO_default_xsputn             
+     0.03%   matmul  libc-2.19.so        [.] _IO_file_overflow@@GLIBC_2.2.5 
+     0.03%   matmul  [kernel.kallsyms]   [k] rw_verify_area                 
+     0.03%   matmul  ld-2.19.so          [.] _dl_lookup_symbol_x            
+     0.02%   matmul  [kernel.kallsyms]   [k] common_file_perm               
+     0.02%   matmul  [kernel.kallsyms]   [k] copy_page_rep                  
+     0.02%   matmul  [kernel.kallsyms]   [k] clear_page_c_e                 
+     0.02%   matmul  libc-2.19.so        [.] __random_r                     
+     0.02%   matmul  [kernel.kallsyms]   [k] fsnotify                       
+     0.02%   matmul  [kernel.kallsyms]   [k] sys_write                      
+     0.02%   matmul  [kernel.kallsyms]   [k] fget_light                     
+     0.02%   matmul  libc-2.19.so        [.] rand                           
+     0.02%   matmul  libblas.so.3.0      [.] ATL_smmJIK2                    
+     0.02%   matmul  [kernel.kallsyms]   [k] system_call                    
+     0.02%   matmul  libc-2.19.so        [.] _IO_do_write@@GLIBC_2.2.5      
+     0.02%   matmul  libblas.so.3.0      [.] ATL_spKBmm                     
+     0.02%   matmul  [kernel.kallsyms]   [k] system_call_after_swapgs       
+     0.01%   matmul  matmul              [.] init                           
+     0.01%   matmul  [kernel.kallsyms]   [k] __mem_cgroup_commit_charge     
+     0.01%   matmul  [kernel.kallsyms]   [k] native_write_msr_safe          
+     0.01%   matmul  libblas.so.3.0      [.] ATL_srow2blkT2_a1              
+     0.01%   matmul  [kernel.kallsyms]   [k] __fsnotify_parent              
+     0.01%   matmul  [kernel.kallsyms]   [k] aa_file_perm                   
+     0.01%   matmul  [kernel.kallsyms]   [k] mem_cgroup_update_lru_size     
+     0.01%   matmul  [kernel.kallsyms]   [k] __queue_work                   
+     0.01%   matmul  [kernel.kallsyms]   [k] sysret_check                   
+     0.01%   matmul  [kernel.kallsyms]   [k] task_tick_fair                 
+     0.01%   matmul  [kernel.kallsyms]   [k] _raw_spin_lock_irqsave         
+     0.01%   matmul  [kernel.kallsyms]   [k] free_pcppages_bulk             
+     0.01%   matmul  [kernel.kallsyms]   [k] unmap_page_range               
+     0.01%   matmul  [kernel.kallsyms]   [k] rebalance_domains              
+     0.01%   matmul  ld-2.19.so          [.] strcmp                         
+     0.01%   matmul  [kernel.kallsyms]   [k] clocksource_watchdog           
+     0.01%   matmul  [kernel.kallsyms]   [k] update_cfs_rq_blocked_load     
+     0.01%   matmul  libblas.so.3.0      [.] ATL_sMBJBmm@plt                
+     0.01%   matmul  matmul              [.] compute                        
+     0.01%   matmul  [kernel.kallsyms]   [k] do_IRQ                         
+     0.01%   matmul  libc-2.19.so        [.] _IO_file_write@@GLIBC_2.2.5    
+     0.01%   matmul  libblas.so.3.0      [.] ATL_supNBmm0_1_0_b1            
+     0.01%   matmul  libblas.so.3.0      [.] ATL_sIBNBmm                    
+     0.01%   matmul  libblas.so.3.0      [.] ATL_sgemm                      
+     0.01%   matmul  [kernel.kallsyms]   [k] radix_tree_lookup_element      
+     0.01%   matmul  [kernel.kallsyms]   [k] set_normalized_timespec        
+     0.01%   matmul  [kernel.kallsyms]   [k] security_file_permission       
+     0.01%   matmul  [kernel.kallsyms]   [k] write_null                     
+     0.01%   matmul  libc-2.19.so        [.] _int_malloc                    
+     0.01%   matmul  [kernel.kallsyms]   [k] account_user_time              
+     0.01%   matmul  [kernel.kallsyms]   [k] select_task_rq_fair            
+     0.01%   matmul  [kernel.kallsyms]   [k] run_timer_softirq              
+     0.01%   matmul  [kernel.kallsyms]   [k] swiotlb_unmap_sg_attrs         
+     0.00%   matmul  [kernel.kallsyms]   [k] flush_signal_handlers          
+
+
+#
+# (For a higher level overview, try: perf report --sort comm,dso)
+#

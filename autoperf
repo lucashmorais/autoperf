@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#echo "${*:2}"
+#for i in ${*:2}
+#do
+	#echo argument: $i
+#done
+
+java -cp antlr/*:bin Main.Main ${*:2}

@@ -15,3 +15,5 @@ hs_err_pid*
 # misc
 *.swp
 toy
+.tmp*
+*.data

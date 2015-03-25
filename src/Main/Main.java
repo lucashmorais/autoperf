@@ -287,10 +287,10 @@ public class Main {
 		{
 			if (s.getPath() == null || s.getPath().contains(new String("?")))
 				continue;
-			
-			annotator = new SourceAnnotator(s);
+						
 			try
 			{
+				annotator = new SourceAnnotator(s);
 				annotator.parseSource();
 				annotator.findAndSetAllFunctionContents();
 				

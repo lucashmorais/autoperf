@@ -31,7 +31,7 @@ public class SourceAnnotator{
 	private ArrayList<Token> blockComments = null;
 	private CommonTokenStream tokens;
 	
-	public SourceAnnotator(Source s)
+	public SourceAnnotator(Source s) throws IOException
 	{
 		this.packedSource = s;
 		readFile();
@@ -42,7 +42,7 @@ public class SourceAnnotator{
 		return packedSource;
 	}
 	
-	public void setSource(Source newSource)
+	public void setSource(Source newSource) throws IOException
 	{		
 		this.packedSource = newSource;
 		readFile();
@@ -66,7 +66,7 @@ public class SourceAnnotator{
 		replaceLine(modifiedLine, lineNumber);		
 	}
 	
-	private void readFile()
+	private void readFile() throws IOException
 	{
 		String currentLine;
 		LineNumberReader reader = null;
@@ -95,10 +95,12 @@ public class SourceAnnotator{
 		catch (FileNotFoundException e)
 		{
 			System.err.println("Could not find source file of " + packedSource.getName() + " on path " + packedSource.getPath());
+			throw new FileNotFoundException();
 		}
 		catch (IOException e)
 		{
 			System.err.println("Error during source file reading: aborting source editing.");
+			throw new IOException();
 		}
 	}
 	

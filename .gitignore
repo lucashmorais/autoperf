@@ -16,4 +16,7 @@ hs_err_pid*
 *.swp
 toy
 **/.tmp*
-**/*.data
+**/*.data*
+template/*report*
+misc/unmodified_template.zip
+

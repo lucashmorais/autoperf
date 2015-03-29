@@ -31,12 +31,12 @@
           <h3>
 <a id="what-is-autoperf" class="anchor" href="#what-is-autoperf" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is autoperf?</h3>
 
-<p>'autoperf' is a little open-source program for displaying Linux perf code profiling information in nicely formatted HTML reports, clearly highlighting hot functions and code sections. It may be useful for anyone tinkering with C or C++ performance profiling on Linux.</p>
+<p><code>autoperf</code> is a little open-source program for displaying Linux perf code profiling information in nicely formatted HTML reports, clearly highlighting hot functions and code sections. It may be useful for anyone tinkering with C or C++ performance profiling on Linux.</p>
 
 <h3>
 <a id="quickstart" class="anchor" href="#quickstart" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quickstart</h3>
 
-<p>After extracting the project tarball and profiling your binary file with 'perf record' as usual, do:</p>
+<p>After extracting the project tarball and profiling your binary file with <code>perf record</code> as usual, do:</p>
 
 <pre><code>$ cd [pathtoautoperf]
 $ ./autoperf -i [somepath]/perf.data
@@ -52,20 +52,26 @@ $ ./autoperf -i [somepath]/perf.data
 <h3>
 <a id="package-dependencies" class="anchor" href="#package-dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Package dependencies</h3>
 
-<p>*exuberant-ctags
-*linux-tools-generic
-*openjdk</p>
+<ul>
+<li>exuberant-ctags</li>
+<li>linux-tools-generic</li>
+<li>openjdk</li>
+</ul>
 
 <h3>
 <a id="tested-kernel-versions" class="anchor" href="#tested-kernel-versions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tested Kernel versions</h3>
 
-<p>*Kernel 3.13
-*Kernel 3.16</p>
+<ul>
+<li>Kernel 3.13</li>
+<li>Kernel 3.16</li>
+</ul>
 
 <h3>
 <a id="known-issues" class="anchor" href="#known-issues" aria-hidden="true"><span class="octicon octicon-link"></span></a>Known issues</h3>
 
-<p>*Source code that may be subject to preprocessor modification may not be correctly annotated by autoperf.</p>
+<ul>
+<li>Source code that may be subject to preprocessor modification may not be correctly annotated by autoperf.</li>
+</ul>
         </section>
 
         <aside id="sidebar">
